@@ -116,6 +116,7 @@ const PROJECTS = [
       "Race-condition-safe checkout using lockForUpdate() on stock during order transactions",
     ],
     liveUrl: "https://shop-laravel-production-e709.up.railway.app",
+    codeUrl: "https://github.com/HadiKarkoosh/shop-laravel",
   },
   {
     name: "Maz Academy — Landing Platform",
@@ -128,6 +129,7 @@ const PROJECTS = [
       "Admin page reading registrations server-side, plus next/image throughout",
     ],
     liveUrl: "https://maz-academy-next.vercel.app",
+    codeUrl: "https://github.com/HadiKarkoosh/maz-academy-next",
   },
 ];
 
@@ -282,15 +284,26 @@ function WorkCard({
           />
           <h3 className="text-text font-semibold text-lg">{project.name}</h3>
         </div>
-        <a
-          href={project.liveUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="font-mono text-xs px-2.5 py-1 rounded-full border shrink-0 hover:opacity-80 transition-opacity"
-          style={{ color: project.color, borderColor: project.color + "55" }}
-        >
-          Live ↗
-        </a>
+        <div className="flex items-center gap-2 shrink-0">
+          <a
+            href={project.codeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono text-xs px-2.5 py-1 rounded-full border hover:opacity-80 transition-opacity"
+            style={{ color: "var(--text-dim)", borderColor: "var(--border)" }}
+          >
+            Code ↗
+          </a>
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono text-xs px-2.5 py-1 rounded-full border hover:opacity-80 transition-opacity"
+            style={{ color: project.color, borderColor: project.color + "55" }}
+          >
+            Live ↗
+          </a>
+        </div>
       </div>
       <p className="font-mono text-sm text-text-dim mb-3">{project.tagline}</p>
       <ul className="space-y-1.5 mb-4">
