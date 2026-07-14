@@ -119,17 +119,17 @@ const PROJECTS = [
     codeUrl: "https://github.com/HadiKarkoosh/shop-laravel",
   },
   {
-    name: "Nibras Academy — Landing Platform",
+    name: "Daffa — Team & Task Management Landing Platform",
     color: "var(--purple)",
-    tagline: "Interactive academy landing platform with a live registration system",
+    tagline: "Arabic-language (RTL) SaaS landing platform with a live signup system",
     stack: ["Next.js", "TypeScript", "React"],
     highlights: [
-      "Real React state driving every tabbed section — tracks, growth path, jobs, labs",
-      "Live registration API route with server-side validation, backed by a JSON store",
-      "Admin page reading registrations server-side, plus next/image throughout",
+      "Real React state driving every tabbed section — product tiers, growth journey, roadmap",
+      "Live signup API route with server-side validation, backed by a JSON store",
+      "Admin page reading signups server-side, plus an original inline-SVG mascot component",
     ],
-    liveUrl: "https://nibras-academy-three.vercel.app",
-    codeUrl: "https://github.com/HadiKarkoosh/nibras-academy",
+    liveUrl: "https://daffa-app.vercel.app",
+    codeUrl: "https://github.com/HadiKarkoosh/daffa-app",
   },
 ];
 
