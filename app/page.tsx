@@ -119,7 +119,7 @@ const PROJECTS = [
     codeUrl: "https://github.com/HadiKarkoosh/shop-laravel",
   },
   {
-    name: "Maz Academy — Landing Platform",
+    name: "Nibras Academy — Landing Platform",
     color: "var(--purple)",
     tagline: "Interactive academy landing platform with a live registration system",
     stack: ["Next.js", "TypeScript", "React"],
@@ -128,8 +128,8 @@ const PROJECTS = [
       "Live registration API route with server-side validation, backed by a JSON store",
       "Admin page reading registrations server-side, plus next/image throughout",
     ],
-    liveUrl: "https://maz-academy-next.vercel.app",
-    codeUrl: "https://github.com/HadiKarkoosh/maz-academy-next",
+    liveUrl: "https://nibras-academy-three.vercel.app",
+    codeUrl: "https://github.com/HadiKarkoosh/nibras-academy",
   },
 ];
 
@@ -657,10 +657,20 @@ export default function Home() {
               github.com/HadiKarkoosh
             </span>
           </a>
-          <div className="flex items-center justify-between px-4 py-4">
+          <a
+            href="https://www.linkedin.com/in/hadi-karkoosh/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between px-4 py-4 hover:bg-bg-panel-2 transition-colors group"
+          >
             <span className="font-mono text-sm text-text-dim">LinkedIn</span>
-            <span className="font-mono text-sm text-text-dim italic">coming soon</span>
-          </div>
+            <span
+              className="font-mono text-sm transition-colors group-hover:opacity-80"
+              style={{ color: "var(--pink)" }}
+            >
+              hadi-karkoosh
+            </span>
+          </a>
         </div>
       </Section>
 

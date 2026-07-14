@@ -45,4 +45,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - Email: hadikarkoosh2005.che@gmail.com
 - GitHub: [HadiKarkoosh](https://github.com/HadiKarkoosh)
-- LinkedIn: [hadi-karkoosh](https://www.linkedin.com/in/hadi-karkoosh-63b63335a/)
+- LinkedIn: [hadi-karkoosh](https://www.linkedin.com/in/hadi-karkoosh/)
