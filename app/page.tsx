@@ -154,22 +154,6 @@ const PROJECTS = [
     liveUrl: "https://tutoring-platform-chi.vercel.app",
     codeUrl: "https://github.com/HadiKarkoosh/tutoring-platform",
   },
-  {
-    name: "Rating Ladder — Codeforces Progress Tracker",
-    color: "var(--amber)",
-    tagline: {
-      en: "Look up any Codeforces handle and see its rank ladder, rating history, and solved problems",
-      ar: "ابحث عن أي معرّف Codeforces وشوف سلم رتبته وتاريخ تقييمه والمسائل المحلولة",
-    },
-    stack: ["Next.js", "TypeScript", "Recharts"],
-    highlights: [
-      { en: "Fully client-side — no backend, fetches directly from the public Codeforces API in the browser", ar: "بالكامل من جهة المتصفح — بدون باك اند، يجلب البيانات مباشرة من API الخاص بـ Codeforces" },
-      { en: "Rank ladder placement uses Codeforces' own real rating-tier colors, not arbitrary ones", ar: "سلم الرتب يستخدم ألوان مستويات التقييم الحقيقية من Codeforces نفسها" },
-      { en: "Rating-history chart, solved-by-difficulty breakdown, and recent-submissions table via recharts", ar: "رسم بياني لتاريخ التقييم، توزيع المسائل حسب الصعوبة، وجدول آخر المحاولات عبر recharts" },
-    ],
-    liveUrl: "https://cf-rating-tracker-delta.vercel.app",
-    codeUrl: "https://github.com/HadiKarkoosh/cf-rating-tracker",
-  },
 ];
 
 const TEXT = {
@@ -217,7 +201,6 @@ const TEXT = {
   githubLabel: { en: "GitHub", ar: "GitHub" },
   linkedinLabel: { en: "LinkedIn", ar: "LinkedIn" },
   footerText: { en: "Built with Next.js, TypeScript & Tailwind CSS", ar: "مبني بـ Next.js و TypeScript و Tailwind CSS" },
-  langToggle: { en: "🌐 عربي", ar: "🌐 EN" },
 };
 
 function useUptime() {
@@ -507,7 +490,7 @@ export default function Home() {
               onClick={toggle}
               className="font-mono text-xs px-2.5 py-1.5 rounded-full border border-border text-text-dim hover:text-text hover:border-blue transition-colors whitespace-nowrap"
             >
-              {t.langToggle}
+              🌐 EN / عربي
             </button>
           </div>
 
