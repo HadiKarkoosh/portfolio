@@ -1,6 +1,19 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "../lib/i18n";
+
+const setInitialDirScript = `
+(function () {
+  try {
+    var saved = localStorage.getItem('lang');
+    if (saved === 'ar') {
+      document.documentElement.lang = 'ar';
+      document.documentElement.dir = 'rtl';
+    }
+  } catch (e) {}
+})();
+`;
 
 const inter = Inter({
   variable: "--font-body",
@@ -29,11 +42,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: setInitialDirScript }} />
+      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );
