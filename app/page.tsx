@@ -682,7 +682,7 @@ export default function Home() {
 
       {/* Work */}
       <Section id="work" eyebrow={t.selectedWorkEyebrow} color="var(--accent)" title={t.workTitle}>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {PROJECTS.map((project, i) => (
             <WorkCard key={project.name} project={project} index={i} lang={lang} codeLabel={t.codeLabel} liveLabel={t.liveLabel} />
           ))}
